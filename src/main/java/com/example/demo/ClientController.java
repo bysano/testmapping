@@ -11,9 +11,15 @@ public class ClientController {
 
     @Autowired
     private  ClientRepository clientRepository;
+    @Autowired
+    private AccountRepository accountRepository;
 
-    @RequestMapping("/")
+    @RequestMapping("/cli")
     public List<Client> showClient(){
         return clientRepository.findAll();
+    }
+    @RequestMapping("/ac")
+    public List<Account> showAccount(){
+        return accountRepository.findAll();
     }
 }

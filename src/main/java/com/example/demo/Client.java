@@ -12,10 +12,8 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "id_client")
     private Integer id;
-
     private String name;
     private int age;
-
     @OneToMany(mappedBy = "client"/*, orphanRemoval = true*/)
     private List<Account> accounts;
 

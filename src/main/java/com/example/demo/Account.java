@@ -11,7 +11,6 @@ public class Account {
     @GeneratedValue
     @Column(name = "id_account")
     private Integer id;
-
     private int amount;
     private String currency;
     @JsonIgnore

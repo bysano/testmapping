@@ -19,7 +19,7 @@ public class DataBaseSetter implements CommandLineRunner {
         accountRepository.deleteAll();
         clientRepository.deleteAll();
         Client client = new Client("test", 27);
-        Account account = new Account(22, "testst", client);
+        Account account = new Account(22, "testaccount", client);
         List<Account> accounts = new ArrayList<>();
         accounts.add(account);
         client.setAccounts(accounts);
